@@ -1,4 +1,6 @@
 const colors = {
+	white: '#FFFFFF',
+	black: '#3D3C3C',
 	background_blue: '#6DBBE4',
 	buttons: '#0077B6',
 	input_white: '#F5FCFE',

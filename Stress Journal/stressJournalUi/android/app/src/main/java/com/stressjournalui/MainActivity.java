@@ -3,6 +3,7 @@ package com.stressjournalui;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
@@ -24,6 +25,12 @@ public class MainActivity extends ReactActivity {
   protected ReactActivityDelegate createReactActivityDelegate() {
     return new MainActivityDelegate(this, getMainComponentName());
   }
+
+  /** 
+  * react-native-screens package requires one additional configuration step to properly work on 
+  * Android devices. Edit MainActivity.java file which is located
+  * in android/app/src/main/java/<your package name>/MainActivity.java.
+  */
 
   public static class MainActivityDelegate extends ReactActivityDelegate {
     public MainActivityDelegate(ReactActivity activity, String mainComponentName) {
