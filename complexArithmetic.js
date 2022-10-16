@@ -12,6 +12,20 @@ const complexMult = (complexNum1, complexNum2) => {
     }
 }
 
+const complexSub = (complexNum1, complexNum2) => {
+    return {
+        real: complexNum1.real - complexNum2.real,
+        imag: complexNum1.imag - complexNum2.imag
+    }
+}
+
+const complexDiv = (complexNum1, complexNum2) => {
+    return {
+        real: ((complexNum1.real * complexNum2.real) + (complexNum1.imag * complexNum2.imag)) / ((complexNum2.real ** 2) + (complexNum2.imag ** 2)),
+        imag: ((complexNum2.real * complexNum1.imag) - (complexNum1.real * complexNum2.imag)) / ((complexNum2.real ** 2) + (complexNum2.imag ** 2))
+    }
+}
+
 function main() {
     const complexNum1 = {
         real: 3,
